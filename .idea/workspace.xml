@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17eb5796-1b41-4fbd-bb80-037347a95f69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/datePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Widgets_datePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConfigReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

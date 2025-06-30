@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-     static Properties prop;
+     public static Properties prop;
 
     public static Properties readProperty(String filePath){
   try {
@@ -20,8 +20,10 @@ public class ConfigReader {
 
 
  } catch (FileNotFoundException e) {
-    e.getMessage();
+      System.err.println("Property file not found: " + filePath);
+      e.getMessage();
 } catch (IOException e) {
+      System.err.println("Failed to load property file: " + filePath);
       e.getMessage();
 
   }
@@ -29,9 +31,7 @@ return prop;
     }
 
     public  static String getPropertyValue(String key){
-        if (prop == null) {
-            readProperty("src/test/resources/config.properties");
-        }
+
         return prop.getProperty(key);
 
     }

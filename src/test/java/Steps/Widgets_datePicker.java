@@ -1,22 +1,16 @@
 package Steps;
 
-import Utils.ConfigReader;
+import Utils.CommonMethods;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
-public class datePicker {
+public class Widgets_datePicker extends CommonMethods {
 
     @When("user browse to the website")
     public void userBrowseToTheWebsite() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("user-data-dir=C:/temp/chrome-profile-" + System.currentTimeMillis());
-        WebDriver driver = new ChromeDriver(options);
 
+     openBrowserAndNavigateToURL();
 
-        driver.get("https://demoqa.com/");
 
     }
 
