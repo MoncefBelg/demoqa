@@ -1,25 +1,23 @@
 package Steps;
 
+import Pages.Widgets;
 import Utils.CommonMethods;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Widgets_datePicker extends CommonMethods {
+public class WidgetsDatePicker extends CommonMethods {
+    Widgets widgets;
 
     @When("user browse to the website")
     public void userBrowseToTheWebsite() {
 
      openBrowserAndNavigateToURL();
-
-
     }
 
     @When("user clicks on Widget Icon")
     public void user_clicks_on_widget_icon() {
 
-
-
-    }
+     performClick(Widgets.);    }
     @When("use clicks on Date Picker Icon")
     public void use_clicks_on_date_picker_icon() {
 

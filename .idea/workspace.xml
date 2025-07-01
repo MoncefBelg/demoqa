@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17eb5796-1b41-4fbd-bb80-037347a95f69" name="Changes" comment="">
+    <list default="true" id="17eb5796-1b41-4fbd-bb80-037347a95f69" name="Changes" comment="CommonMethod,ConfigReader,PageInitializer,Pages were added to the project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/datePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/Widgets_datePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/Widgets_datePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Steps/WidgetsDatePicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/ConfigReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +78,29 @@
       <option name="presentableId" value="Default" />
       <updated>1751137220917</updated>
     </task>
+    <task id="LOCAL-00001" summary="CommonMethod,ConfigReader,PageInitializer,Pages were added to the project.">
+      <created>1751313073031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751313073031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CommonMethod,ConfigReader,PageInitializer,Pages were added to the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="CommonMethod,ConfigReader,PageInitializer,Pages were added to the project." />
   </component>
 </project>

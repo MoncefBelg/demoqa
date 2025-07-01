@@ -2,10 +2,13 @@ package Utils;
 
 import Steps.PageInitializer;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -34,9 +37,22 @@ public class CommonMethods extends PageInitializer {
     driver.get(ConfigReader.getPropertyValue("Website"));
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         initializePageObjects();
+    }
+
+    public static WebDriverWait getWait(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        return wait;
+    }
+    public static void WaitForClickability(WebElement element){
+      getWait().until(ExpectedConditions.elementToBeClickable(element));
+
+    }
+
+    public static void performClick(WebElement element){
+        WaitForClickability(element);
+        element.click();
+
+    }
 
 
-
-
-}
 }
