@@ -1,10 +1,14 @@
 package Steps;
 
+import Pages.NestedFrames;
+import Pages.Widgets;
+import Utils.CommonMethods;
+
 public class PageInitializer {
 
-    public static WidgetsDatePicker widgetsDatePicker;
+    public static Widgets widgets;
 
-
+    public static NestedFrames nestedFrames;
 
 
 
@@ -13,9 +17,8 @@ public class PageInitializer {
 
     public static void initializePageObjects(){
 
-        widgetsDatePicker = new WidgetsDatePicker();
-
-
+    widgets = new Widgets();
+    nestedFrames = new NestedFrames();
 
 
 

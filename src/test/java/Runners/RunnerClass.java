@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions (
-        features = "src/test/Features/datePicker.feature",
+        features = "src/test/Features/",
         glue = "Steps",
-        tags = "@regression",
+        tags = "@nestedIframes",
         monochrome = true,
-        dryRun = false,
+        dryRun = true,
         plugin = {"pretty"}
 )
 
