@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "Steps",
         tags = "@nestedIframes",
         monochrome = true,
-        dryRun = true,
+        dryRun = false,
         plugin = {"pretty"}
 )
 
