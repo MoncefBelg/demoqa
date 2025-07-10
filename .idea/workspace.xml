@@ -61,8 +61,8 @@
       <recent name="Steps" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="RunnerClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ClassRunner">
+    <configuration name="ClassRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Demoqa" />
       <extension name="coverage">
         <pattern>
@@ -71,7 +71,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners.RunnerClass" />
+      <option name="MAIN_CLASS_NAME" value="Runners.ClassRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FailedTestRerunRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runners" />
+      <option name="MAIN_CLASS_NAME" value="Runners.FailedTestRerunRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,7 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RunnerClass" />
+        <item itemvalue="JUnit.ClassRunner" />
+        <item itemvalue="JUnit.FailedTestRerunRunner" />
       </list>
     </recent_temporary>
   </component>

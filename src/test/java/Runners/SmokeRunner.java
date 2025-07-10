@@ -6,15 +6,15 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions (
+@CucumberOptions(
         features = "src/test/Features/",
         glue = "Steps",
-        tags = "@nestedIframes",
+        tags = "@smoke",
         monochrome = true,
         dryRun = false,
-        plugin = {"pretty"}
+        plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json",
+                "rerun:target/failed.txt"}
 )
 
-
-public class RunnerClass {
+public class SmokeRunner {
 }

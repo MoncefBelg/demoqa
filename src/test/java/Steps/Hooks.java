@@ -15,7 +15,7 @@ public class Hooks extends CommonMethods {
     @After
     public void end(Scenario scenario){
         //we need this variable because my ss method returns array of byte
-      /*  byte[] pic;
+        byte[] pic;
         //here we are going to capture the screenshot and attaching it to the report
         if(scenario.isFailed()) {
             pic = takeScreenshot("failed/" + scenario.getName());
@@ -25,9 +25,9 @@ public class Hooks extends CommonMethods {
         //attach this screenshot in the report
         scenario.attach(pic,"image/png",scenario.getName());
         closeBrowser();
-    }*/
+    }
 
-        closeBrowser();
-}
 
 }
+
+
