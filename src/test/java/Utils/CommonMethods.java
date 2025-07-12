@@ -7,11 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -20,21 +23,30 @@ import java.util.List;
 public class CommonMethods extends PageInitializer {
 
       public static WebDriver driver;
-    public static void openBrowserAndNavigateToURL(){
+
+    public static void openBrowserAndNavigateToURL() throws MalformedURLException {
         ConfigReader.readProperty(Constants.CONFIG_READER_PATH);
 
-    switch (ConfigReader.getPropertyValue("browser")){
+        String browser = ConfigReader.getPropertyValue("browser");
+      //  String gridURL = ConfigReader.getPropertyValue("gridURL");
+
+
+            switch(browser.toLowerCase()){
 
         case "chrome" :
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("user-data-dir=C:/temp/chrome-profile-" + System.currentTimeMillis());
-             driver = new ChromeDriver(options);
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("user-data-dir=C:/temp/chrome-profile-" + System.currentTimeMillis());
+            // driver = new ChromeDriver(options);
+           // driver = new RemoteWebDriver(new URL(gridURL), chromeOptions);
+            driver = new ChromeDriver();
              break;
 
         case "firefox" :
-            FirefoxOptions options1=new FirefoxOptions();
-            options1.addArguments("user-data-dir=C:/temp/firefox-profile-" + System.currentTimeMillis());
-            driver = new FirefoxDriver(options1);
+            FirefoxOptions firefoxOptions=new FirefoxOptions();
+            firefoxOptions.addArguments("user-data-dir=C:/temp/firefox-profile-" + System.currentTimeMillis());
+            //driver = new FirefoxDriver(firefoxOptions);
+          //  driver = new RemoteWebDriver(new URL(gridURL), firefoxOptions);
+
             break;
     }
 

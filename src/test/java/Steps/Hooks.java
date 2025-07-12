@@ -1,15 +1,27 @@
 package Steps;
 
 import Utils.CommonMethods;
+import Utils.ConfigReader;
+import Utils.Constants;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Hooks extends CommonMethods {
 
     @Before
-    public void start(){
+    public void start() throws MalformedURLException {
+
         openBrowserAndNavigateToURL();
+      //  System.out.println("Driver class: " + driver.getClass().getName());
+
+
     }
 
     @After
@@ -25,6 +37,7 @@ public class Hooks extends CommonMethods {
         //attach this screenshot in the report
         scenario.attach(pic,"image/png",scenario.getName());
         closeBrowser();
+
     }
 
 

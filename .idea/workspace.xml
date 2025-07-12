@@ -61,7 +61,7 @@
       <recent name="Steps" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClassRunner">
+  <component name="RunManager" selected="TestNG.ParallelTestingTestNG">
     <configuration name="ClassRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Demoqa" />
       <extension name="coverage">
@@ -77,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FailedTestRerunRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClassRunner.scenarios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Demoqa" />
       <extension name="coverage">
         <pattern>
@@ -86,16 +86,64 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners.FailedTestRerunRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Runners.ClassRunner" />
+      <option name="METHOD_NAME" value="scenarios" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runners" />
+      <option name="MAIN_CLASS_NAME" value="Runners.ClassRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/Demoqa/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demoqa" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelTestingTestNG" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runners" />
+      <option name="MAIN_CLASS_NAME" value="Runners.ParallelTestingTestNG" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ParallelTestingTestNG" />
+        <item itemvalue="TestNG.ClassRunner" />
+        <item itemvalue="JUnit.ClassRunner.scenarios" />
+        <item itemvalue="TestNG.D:/Demoqa/testng.xml" />
         <item itemvalue="JUnit.ClassRunner" />
-        <item itemvalue="JUnit.FailedTestRerunRunner" />
       </list>
     </recent_temporary>
   </component>
